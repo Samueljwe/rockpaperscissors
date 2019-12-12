@@ -10,7 +10,12 @@ body {
     width: 600px;
     height: 380px;
     margin: auto;
-    padding: 25px
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+  
     
 }
 
@@ -28,7 +33,7 @@ body {
 }
 
 #main p {
-    font-size: 15px;
+    font-size: 16px;
     margin: 5px;
     padding-bottom: 0px;
 }
@@ -71,7 +76,7 @@ button:focus {
 
 button.reset {
      background-color: aquamarine;
-    border: 1px solid black;
+    border: 1px solid aquamarine;
     border-radius: 2px;
     color: #2F4F4F;
     font-family: 'Courier New', 'Times New Roman';
