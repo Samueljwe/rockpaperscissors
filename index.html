@@ -1,63 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="myScript.js"></script>
 </head>
 <body>
-  <script>
-function computerPlay() {
-      let selection = Math.floor(Math.random() * 3);
-      switch (selection) {
-        case 0:
-          return "Rock";
-          break;
-        case 1: 
-          return "Paper";
-          break;
-        case 2:
-          return "Scissors";
-          break;
-        default:
-          return "Error";
-          break;
-      }
-    }
-function playRound(playerSelection, computerSelection) {
-  playerSelection = playerSelection.toLowerCase();
   
-  
-  switch (playerSelection) {
-    case "ROCK":
-      if (computerSelection == "PAPER") {
-        return "You lose!";
-      } else if (computerSelection == "SCISSORS") {
-        return "You win!";
-      } else {
-        return "It's a draw!";
-      }
+  <div id ="main">
+    <h1>Let's play rock paper scissors!</h1>
+    <p>You think you can beat me!?</p>
+    <img src="https://media.giphy.com/media/cEMZ01Xkpc2cw/giphy.gif">
+    <p>Best of 5 wins!</p>
+    <button class="buttons" value="Rock" onclick="main(this.value)">Rock</button>
+    <button class="buttons" value="Paper" onclick="main(this.value)">Paper</button>
+    <button class="buttons" value="Scissirs" onclick="main(this.value)">Scissors</button>
+    <p id="description">Let's play!</p>
+    <p id="score">0:0</p>
+    <p id="reset" onclick="reset();">Reset</p>
+  </div>
 
-    case "SCISSORS":
-      if (computerSelection == "ROCK") {
-        return "You lose!";
-      } else if (computerSelection == "PAPER") {
-        return "You win!";
-      } else { 
-        return "It's a draw!";
-      }
-      
-    case "PAPER":
-      if (computerSelection == "ROCK") {
-        return "You win!";
-      } else if (computerSelection == "SCISSORS") {
-        return "You lose!";
-      } else {
-        return "It's a draw!"
-      }
 
-    defaut:
-      return "Please select rock, paper or scissors!";   
-  }
-}
-  </script>
 </body>
 </html>
