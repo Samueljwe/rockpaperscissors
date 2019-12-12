@@ -1,0 +1,98 @@
+body {
+    background-color: #00CED1
+}
+
+#main {
+    border: 5px dashed #2F4F4F;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 380px;
+    margin: auto;
+    padding: 25px
+    
+}
+
+#main h1,p {
+    color: #2F4F4F;
+    font-family: 'Courier New', 'Times New Roman';
+    font-weight: bold;
+
+
+}
+
+#main h1 {
+    font-size: 25px;
+    font-family: 'Courier New', 'Times New Roman';
+}
+
+#main p {
+    font-size: 15px;
+    margin: 5px;
+    padding-bottom: 0px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    background-color: #2F4F4F;
+    border: 1px solid #2F4F4F;
+    border-radius: 2px;
+    color: #fcfcfc;
+    font-family: 'Courier New', 'Times New Roman';
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 85px;
+    padding: 10px 0px;
+
+}
+
+button:hover {
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
+    color: #2F4F4F;
+}
+
+button:focus {
+    outline: none;
+    background-color: aquamarine;
+}
+
+.buttons {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+button.reset {
+     background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: #2F4F4F;
+    font-family: 'Courier New', 'Times New Roman';
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 85px;
+    padding: 5px 0px;
+
+}
+   
+.reset {
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+   
+}
+
+.reset:hover {
+    background-color: #66CDAA;
+    transition: color 0.3s linear;
+
+}
