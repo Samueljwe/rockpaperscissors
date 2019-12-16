@@ -44,10 +44,10 @@ function descriptionDisplay(outcome, playerSelection, computerSelection) {
              document.getElementById("description").innerHTML = "Your " + playerSelection + " beats my " + computerSelection + "!";
              break;
          case 'lose':
-             document.getElementById("description").innerHTML = "My " + computerSelection + "beats your " + playerSelection + "!";
+             document.getElementById("description").innerHTML = "My " + computerSelection + " beats your " + playerSelection + "!";
              break;
          case 'draw':
-             document.getElementById("description").innerHTML = "We both chose " + playerSelection;
+             document.getElementById("description").innerHTML = "We both chose " + playerSelection + "!";
              break; 
 
         }
@@ -87,6 +87,6 @@ function main(playerSelection) {
         gameOver = check();
     } else {
         document.getElementById("description").innerHTML = "Would you like to play again?";
-        document.getElementById("score").innerHTML = "Yes " + " or " + " No " + "?";
+        document.getElementById("score").innerHTML = "Yes " + " or " + " No" + "?";
     }
 }
