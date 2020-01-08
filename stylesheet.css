@@ -101,3 +101,22 @@ button.reset {
     transition: color 0.3s linear;
 
 }
+
+#goAgain {
+    border: none;
+    padding: 0px;
+    background: none;
+    color: #2F4F4F;
+    font-family: 'Courier New', 'Times New Roman';
+    font-weight: bold;
+    border-radius: 10px;
+    width: 30px;
+    font-size: 16px;
+    text-transform: none;
+
+}
+
+#goAgain:hover {
+    text-decoration: underline;
+    
+}

@@ -78,6 +78,15 @@ function reset () {
     document.getElementById("description").innerHTML = "Game reset!";
 }
 
+function noPlay() {
+    document.getElementById("container").innerHTML = "GAME OVER!";
+    const container = document.querySelector("#container");
+    container.style.color = '#2F4F4F';
+    container.style.fontFamily = 'Courier New', 'Times New Roman';
+    container.style.fontWeight = 'bold';
+    container.style.fontSize = '66px';
+}
+
 function main(playerSelection) {
     if (gameOver === false) {
         const computerSelection = computerPlay();
@@ -86,7 +95,8 @@ function main(playerSelection) {
         score();
         gameOver = check();
     } else {
-        document.getElementById("description").innerHTML = "Would you like to play again?";
-        document.getElementById("score").innerHTML = "Yes " + " or " + " No" + "?";
+        document.getElementById("description").textContent = "Would you like to play again?";
+        document.getElementById("score").innerHTML = "<button id='goAgain' onclick='reset();'>Yes</button> or <button id='goAgain' onclick='noPlay();'>No</button>";
     }
+
 }
