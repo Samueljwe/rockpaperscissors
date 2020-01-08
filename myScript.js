@@ -71,10 +71,7 @@ function check() {
 }
 
 function reset () {
-    gameOver = false;
-    userScore = 0;
-    computerScore = 0;
-    score();
+    location.reload()
     document.getElementById("description").innerHTML = "Game reset!";
 }
 
